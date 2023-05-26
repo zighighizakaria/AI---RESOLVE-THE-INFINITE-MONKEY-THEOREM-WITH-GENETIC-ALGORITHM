@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Paradoxe du singe savant    </title>
+    <link rel="icon" type="image/x-icon" href="/images/ENSET Mohammedia.svg">
+    <!-- JQquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <Link rel="stylesheet" src="css/CustumClasses.css"/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="js/monkey.js"></script>
+    <script src="js/population.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+
+<body>
+    <div class="logo">
+        <img src="images/monkey-typewriter.gif">
+    </div>
+    
+    <div class="container">
+        <h1 style="margin-top: 20px;" class="TitleColor">Paradoxe du singe savant</h1>
+        <h5 class="text-medium"><em class="text-muted">Résolu à l'aide d'un algorithme génétique</em></h5>
+        
+        <div class="row">
+
+            <div class="col-md-4 settings-container">
+                <h2>Paramètres</h2>
+                <form>
+                    <div class="form-group inputBox">
+                        <label for="target">Texte cible</label>
+                        <input class="form-control" type="text" id="targetText" value="ME">
+                    </div>
+                    <div class="form-group inputBox">
+                        <label for="popSize">Taille de la population</label>
+                        <input class="form-control" type="number" id="popSize" min="0" max="500" step="10" value="100">
+                    </div>
+                    <div class="form-group inputBox">
+                        <label for="mutationRate">Taux de mutation</label>
+                        <input class="form-control" type="number" id="mutationRate" min="0" step="1" max="100"
+                            value="1">
+                    </div>
+                    <div class="form-group inputBox">
+                        <label for="speed">Vitesse (calculs par seconde)</label>
+                        <input class="form-control" type="number" id="speed" min="1" step="10" max="100" value="20">
+                    </div>
+                    <div class="form-group inputBox">
+                        <label for="nPhrases">Afficher le nombre de phrases</label>
+                        <input class="form-control" type="number" id="nPhrases" min="1" step="10" max="500" value="10">
+                    </div>
+                    <input class="Runbtn" type="button" value="Run" id="runButton">
+                    <input type="button" class="Stepbtn" value="Step"
+                    id="stepButton">
+                    <input class="Mybtn" type="button" value="Reset" id="resetButton">
+                    <input type="button" class="MyStopBtn" value="Stop" id="stopButton">
+                </form>
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h3 id="bestMonkey">Meilleur singe</h3><br>
+                        <span class="counter text-sm">Génération : <em id="generationNum"></em></span><br>
+                        <span class="counter text-sm">Aptitude moyenne : <em id="averageFitness"></em></span><br>
+                        <span class="counter text-sm">Calcul par seconde : <em id="compPerSec"></em></span><br>
+                        <span class="counter text-sm">Taux de mutation : <em id="mutationRateLabel"></em></span><br>
+                        <span class="counter text-sm">Taille de la population : <em id="popSizeLabel"></em></span>
+                    </div>
+                    <div class="col-md-4">
+                        <h4 class="pxx">Principales expressions</h4>
+                        <div id="phrases">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

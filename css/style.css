@@ -1,0 +1,123 @@
+.row {
+    padding: 16px;
+}
+
+#phrases span {
+    font-size: 16px;
+    line-height: 16px;
+    float: left;
+    clear: left;
+}
+
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #ffffff;
+}
+
+.TitleColor{
+    color: #012889;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Mybtn{
+    background-color: #3dbcf9!important;
+    padding: 2px 20px;
+    border-radius: 2px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.Runbtn{
+    background-color: #5fbc78!important;
+    padding: 2px 20px;
+    border-radius: 2px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.Stepbtn{
+    background-color: #f87e32!important;
+    padding: 2px 20px;
+    border-radius: 2px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.MyStopBtn{
+    background-color: #ff5252!important;
+    padding: 2px 20px;
+    border-radius: 2px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.settings-container{
+    background-color: #00288a!important;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+}
+
+.settings-container form input{
+    background-color: #113a9f;
+    border: none;
+    color: white;
+}
+
+.inputBox{
+    font-size: 0.9rem!important;
+}
+.text-medium{
+    font-size: 1.1rem!important;
+    padding: 10px 0px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+.counter{
+    display: block;
+    background-color: #113a9f;
+    color: white;
+    width:70%;
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+
+.text-sm{
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.phrases{
+    background-color: #00288a;
+    width: 100%;
+    color: white;
+    text-align: center;
+    margin: 2px 0px;
+    padding: 6px 2px;
+    border-radius: 4px;
+    font-size: 0.9rem!important;
+    font-weight: bold;
+}
+
+.pxx{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.logo{
+    display: grid;
+    justify-items: center;
+}
+
+.logo img{
+    width: 100px;
+    height: 100px;
+
+}
